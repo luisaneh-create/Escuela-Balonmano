@@ -1,2 +1,217 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Escuela Municipal Castro Urdiales Balonmano</title><style>
-:root{--green:#087a43;--red:#c5232a;--ink:#12251d;--cream:#f6f7f2}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe 
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Escuela Municipal Castro Urdiales Balonmano</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f4f6f4;
+  color:#173126;
+}
+header{
+  background:#087a43;
+  color:white;
+  text-align:center;
+  padding:25px 15px;
+}
+header h1{margin:0;font-size:32px}
+header p{margin:8px 0 0}
+nav{
+  background:#c5232a;
+  text-align:center;
+  padding:12px;
+}
+nav button{
+  background:white;
+  color:#173126;
+  border:0;
+  border-radius:8px;
+  padding:10px 18px;
+  margin:4px;
+  font-size:16px;
+  cursor:pointer;
+  font-weight:bold;
+}
+main{
+  max-width:900px;
+  margin:auto;
+  padding:25px;
+}
+.pagina{
+  display:none;
+  background:white;
+  padding:25px;
+  border-radius:14px;
+  box-shadow:0 2px 8px #bbb;
+}
+.pagina.activa{display:block}
+.boton{
+  display:inline-block;
+  background:#087a43;
+  color:white;
+  border:0;
+  border-radius:9px;
+  padding:12px 18px;
+  margin:8px 4px;
+  cursor:pointer;
+  font-size:16px;
+}
+.ficha{
+  border-left:6px solid #c5232a;
+  padding:15px;
+  background:#f7f7f7;
+  margin-top:15px;
+}
+footer{
+  text-align:center;
+  padding:25px;
+  color:#666;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Escuela Municipal Castro Urdiales Balonmano</h1>
+  <p>Balonmano base · Formación · Diversión · Equipo</p>
+</header>
+
+<nav>
+  <button onclick="ver('inicio')">Inicio</button>
+  <button onclick="ver('entrenamientos')">Entrenamientos</button>
+  <button onclick="ver('partidos')">Partidos</button>
+</nav>
+
+<main>
+
+<section id="inicio" class="pagina activa">
+  <h2>Bienvenidos a nuestra Escuela de Balonmano</h2>
+  <p>
+    Un espacio para aprender, disfrutar y crecer a través del balonmano.
+  </p>
+  <p>
+    Aquí iremos incorporando entrenamientos, ejercicios, fichas,
+    partidos y contenidos para nuestros jugadores.
+  </p>
+  <button class="boton" onclick="ver('entrenamientos')">
+    Ver entrenamientos
+  </button>
+</section>
+
+<section id="entrenamientos" class="pagina">
+  <h2>Entrenamientos</h2>
+  <p>Selecciona una ficha para verla completa.</p>
+
+  <button class="boton" onclick="ver('ficha1')">
+    Ficha 1
+  </button>
+
+  <button class="boton" onclick="ver('ficha2')">
+    Ficha 2
+  </button>
+</section>
+
+<section id="ficha1" class="pagina">
+  <h2>Ficha 1 · Entrenamiento</h2>
+
+ <div class="ficha">
+
+<h3>1. Calentamiento</h3>
+<p><strong>Duración:</strong> 10 minutos</p>
+<p>Carrera suave, movilidad articular y desplazamientos variados.</p>
+<p>Trabajo con balón por parejas: pases en movimiento, recepción y coordinación.</p>
+<button class="boton" onclick="ver('ejercicio1')">VER EJERCICIO</button>
+
+<h3>2. Activación con balón</h3>
+<p><strong>Duración:</strong> 10 minutos</p>
+<p>Pases por parejas aumentando progresivamente la distancia.</p>
+<p>Desplazamientos laterales, cambios de dirección y pase después del movimiento.</p>
+<button class="boton" onclick="ver('ejercicio2')">VER EJERCICIO</button>
+
+<h3>3. Parte principal</h3>
+<p><strong>Duración:</strong> 25 minutos</p>
+<p>Trabajo de pase y recepción en movimiento.</p>
+<p>Cambios de dirección, fintas y desplazamientos defensivos.</p>
+<p>Lanzamientos a portería desde diferentes posiciones.</p>
+<p>Situaciones de ataque y defensa con oposición progresiva.</p>
+<button class="boton" onclick="ver('ejercicio3')">VER EJERCICIO</button>
+
+<h3>4. Juego aplicado</h3>
+<p><strong>Duración:</strong> 10 minutos</p>
+<p>Partido reducido para aplicar los contenidos trabajados durante el entrenamiento.</p>
+<button class="boton" onclick="ver('ejercicio4')">VER EJERCICIO</button>
+
+<h3>5. Vuelta a la calma</h3>
+<p><strong>Duración:</strong> 5 minutos</p>
+<p>Movilidad suave, estiramientos y breve comentario final con el equipo.</p>
+
+<p><strong>Duración total aproximada: 60 minutos.</strong></p>
+
+</div>
+
+  <button class="boton" onclick="ver('entrenamientos')">
+    ← Volver a entrenamientos
+  </button>
+</section>
+<section id="ejercicio1" class="pagina">
+  <h2>Ejercicio 1 · Calentamiento</h2>
+
+  <div class="ficha">
+    <h3>Carrera, movilidad y trabajo con balón</h3>
+
+    <p><strong>Duración:</strong> 10 minutos</p>
+
+    <p><strong>Organización:</strong> Los jugadores se distribuyen por todo el campo, dejando espacio suficiente entre ellos.</p>
+
+    <p><strong>Desarrollo:</strong> Comenzamos con carrera suave y movilidad articular. Después realizamos desplazamientos variados y trabajo por parejas con balón.</p>
+
+    <p><strong>Objetivo:</strong> Activar progresivamente al jugador, mejorar la coordinación y preparar el cuerpo para el entrenamiento.</p>
+
+    <p><strong>Material:</strong> Balones y conos.</p>
+
+    <h3>📋 DIBUJO DEL EJERCICIO</h3>
+    <p>Aquí colocaremos el dibujo del campo con los jugadores, conos, recorridos y pases.</p>
+  </div>
+
+  <button class="boton" onclick="ver('ficha1')">
+    ← VOLVER A FICHA 1
+  </button>
+</section>
+<section id="ficha2" class="pagina">
+  <h2>Ficha 2 · Entrenamiento</h2>
+  <p>Esta ficha la prepararemos después.</p>
+
+  <button class="boton" onclick="ver('entrenamientos')">
+    ← Volver
+  </button>
+</section>
+
+<section id="partidos" class="pagina">
+  <h2>Partidos</h2>
+  <p>Aquí podremos añadir calendario, resultados y próximos partidos.</p>
+</section>
+
+</main>
+
+<footer>
+  Escuela Municipal Castro Urdiales Balonmano
+</footer>
+
+<script>
+function ver(id){
+  document.querySelectorAll('.pagina').forEach(function(p){
+    p.classList.remove('activa');
+  });
+  document.getElementById(id).classList.add('activa');
+  window.scrollTo(0,0);
+}
+</script>
+
+</body>
+</html>
